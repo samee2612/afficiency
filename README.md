@@ -20,9 +20,10 @@ server serves both the built frontend and API from one port.
 
 The included `render.yaml` configures a single Render web service. Push this
 repository to GitHub, then in Render choose **New → Blueprint**, connect the
-repository, and apply the `afficiency` service. Render builds the frontend,
-starts the Node server, and uses `/api/health` for its health check. The
-published `onrender.com` URL can be shared once the first deploy succeeds.
+repository, and apply the `afficiency` service. Render installs build-time
+dependencies, builds the frontend, starts the Node server, and uses
+`/api/health` for its health check. The published `onrender.com` URL can be
+shared once the first deploy succeeds.
 
 Demo quotes are stored in memory and are cleared when the service restarts.
 Do not use this sample pricing or eligibility logic for real insurance quotes.
